@@ -30,7 +30,7 @@ func (service DatabaseService) GetMeetings(
 		})
 	}
 
-	pairs, _, err := c.QueryCollection(
+	pairs, _, err := c.Query(
 		base,
 		collectionConfiguration.GetCollection(),
 		&coremodel.QueryConfig{

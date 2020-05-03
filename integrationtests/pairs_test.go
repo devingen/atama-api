@@ -13,8 +13,8 @@ import (
 
 type PairsTestSuite struct {
 	suite.Suite
-	service      service.AtamaService
-	base string
+	service service.AtamaService
+	base    string
 }
 
 func TestPairs(t *testing.T) {
@@ -25,8 +25,8 @@ func TestPairs(t *testing.T) {
 	}
 
 	testSuite := &PairsTestSuite{
-		service:      service.NewDatabaseService(db),
-		base: "dvn-atama-api-integration-test",
+		service: service.NewDatabaseService(db),
+		base:    "dvn-atama-api-integration-test",
 	}
 
 	util.InsertDataFromFile(db, testSuite.base, "organisations")

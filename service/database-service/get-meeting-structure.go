@@ -11,7 +11,7 @@ func (service DatabaseService) GetMeetingStructure(base string, collectionConfig
 	// create a Data API Database AtamaService
 	c := dataservice.NewDatabaseService(service.Database)
 
-	results, _, err := c.QueryCollection(
+	results, _, err := c.Query(
 		base,
 		"meetingGoalConfigs",
 		&coremodel.QueryConfig{

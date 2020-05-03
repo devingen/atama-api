@@ -16,7 +16,7 @@ func (service DatabaseService) GetAllPairs(
 	// create a Data API Database AtamaService
 	c := dataservice.NewDatabaseService(service.Database)
 
-	return c.QueryCollection(
+	return c.Query(
 		base,
 		collectionConfiguration.GetCollection(),
 		&coremodel.QueryConfig{

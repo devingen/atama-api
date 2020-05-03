@@ -39,7 +39,7 @@ func (service DatabaseService) GetPairs(
 		queryFields = append(queryFields, field)
 	}
 
-	return c.QueryCollection(
+	return c.Query(
 		base,
 		collectionConfiguration.GetCollection(),
 		&coremodel.QueryConfig{

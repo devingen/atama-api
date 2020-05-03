@@ -2,5 +2,7 @@
 bin
 .serverless
 
+integrationtests/result/*
+
 .idea
 .DS_Store
