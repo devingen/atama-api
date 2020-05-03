@@ -1,0 +1,6 @@
+# aws lambda executables
+bin
+.serverless
+
+.idea
+.DS_Store

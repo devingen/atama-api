@@ -1,0 +1,64 @@
+[
+  {
+    "_id": "1",
+    "fields": [
+      {
+        "type": "reference",
+        "id": "first",
+        "otherCollection": "memberships",
+        "isSingle": true,
+        "fields": [
+          {
+            "type": "text",
+            "id": "firstName"
+          },
+          {
+            "type": "text",
+            "id": "lastName"
+          }
+        ],
+        "filter": {
+          "operator": "and",
+          "filters": [
+            {
+              "comparison": "eq",
+              "id": "role",
+              "value": "mentor"
+            }
+          ]
+        }
+      },
+      {
+        "type": "relation-reference",
+        "id": "second",
+        "relationCollection": "memberships",
+        "nameInRelationCollection": "user",
+        "otherCollection": "organisations",
+        "nameOfOtherCollectionInRelationCollection": "organisation",
+        "fields": [
+          {
+            "type": "text",
+            "id": "status"
+          }
+        ],
+        "otherCollectionFields": [
+          {
+            "type": "text",
+            "id": "title"
+          }
+        ]
+      }
+    ],
+    "first": {
+      "$id": "3",
+      "$ref": "members",
+      "$db": "devingen"
+    },
+    "second": {
+      "$id": "4",
+      "$ref": "members",
+      "$db": "devingen"
+    },
+    "status": "active"
+  }
+]

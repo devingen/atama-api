@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "1",
+    "organisation": {
+      "_id": "1",
+      "_class": "organisations"
+    },
+    "subscribed": {
+      "_id": "1",
+      "_class": "memberships"
+    },
+    "subscriber": {
+      "_id": "2",
+      "_class": "memberships"
+    },
+    "status": "active"
+  },
+  {
+    "_id": "2",
+    "organisation": {
+      "_id": "1",
+      "_class": "organisations"
+    },
+    "subscribed": {
+      "_id": "1",
+      "_class": "memberships"
+    },
+    "subscriber": {
+      "_id": "3",
+      "_class": "memberships"
+    },
+    "status": "passive"
+  },
+  {
+    "_id": "10",
+    "organisation": {
+      "_id": "2",
+      "_class": "organisations"
+    },
+    "subscribed": {
+      "_id": "10",
+      "_class": "memberships"
+    },
+    "subscriber": {
+      "_id": "9",
+      "_class": "memberships"
+    },
+    "status": "active"
+  }
+]
